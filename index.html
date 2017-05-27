@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Plash | Front-end developer assignment</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.20.0/select.min.css" />
+
+    <!--     Fonts and icons     -->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<style>
+.ui-select-highlight{
+			background-color: yellow;
+		}
+a{
+	color : black;
+}
+</style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default" role="navigation-demo" style="position:fixed; width:100%; height:60px; padding:0px;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Plash</a>
+			</div>
+			<div class="collapse navbar-collapse clearfix" id="navigation-example-2" style="margin-top:10px;">
+				<!--
+				Directive pl-serach impliments the searching mechanism
+				-->
+
+				<pl-Search class="col-sm-5"></pl-Search>
+			</div>
+		</div>
+	</nav>
+	<div class="clearfix"></div>
+	<div class="wrapper" style="background:#f3f3f3;">
+		<div class="clearfix"></div>
+	    <div class="container" style="margin-top:100px;">
+	        <div class="col-md-10">
+						<h1>Javascript/front-end at Plash : Assignment </h1>
+						<h2><small>Developer : </small> Sanjeev Malagi</h2>
+						<h3><small>Code : </small> <a>GitHub</a> <a>Live</a></h3>
+						<p>
+							Here is the assignment for front end developer position at Plast.
+							The component is implimented as a directive named <b>pl-search</b>
+							<a class="btn btn-primary fa fa-link" href="/app/Directives/Header/Header.directive.js" target="_blank"></a>
+
+							Plash search directive impliments search mechanims using dataService
+							<a class="btn btn-primary fa fa-link" href="app/Core/DataService.js" target="_blank"></a>
+
+							This project uses two external Angular modules <a class="btn" href="https://github.com/angular-ui/ui-select" target="_blank">ui.select</a> and
+							<a class="btn" href="https://docs.angularjs.org/api/ngSanitize" target="_blank">ngSanitize</a>
+
+							<ul>
+								<li>Filtering <i class="fa fa-check" aria-hidden="true"></i> </li>
+								<li>Keyboard navigation <i class="fa fa-check" aria-hidden="true"></i> </li>
+								<li>Scrolling behaviour (partial)</li>
+							</ul>
+
+						</p>
+						Directive --->
+						<br/>
+						<pl-Search class="col-sm-6"></pl-Search>
+
+	        </div>
+	    </div>
+	</div>
+</body>
+
+
+<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="content/native/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+    <!-- ui-select files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.20.0/select.min.js"></script>
+<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+
+<script src="assets/js/ct-paper.js"></script>
+
+<script src="app/app.module.js"></script>
+
+<script src="app/Core/Core.module.js"></script>
+<script src="app/Core/DataService.js"></script>
+
+<!--Directives module-->
+<script src="app/Directives/Directives.module.js"></script>
+<script src="app/Directives/Search/Search.directive.js"></script>
+</html>
